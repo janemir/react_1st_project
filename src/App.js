@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 function App() {
-  const [likes, setLikes] = useState(5)
+  let [likes, setLikes] = useState(5)
   
   function increment(){
     setLikes(likes += 1)
