@@ -2,19 +2,22 @@ import React, { useState } from "react";
 
 function App() {
   let [likes, setLikes] = useState(5)
-  
-  function increment(){
+  let [value, setValue] = useState('ТЕКСТ В ИНПУТЕ')
+
+  function increment() {
     setLikes(likes += 1)
   }
 
-  function decrement(){
+  function decrement() {
     setLikes(likes -= 1)
   }
 
   return (
     <div className="App">
       <h1>{likes}</h1>
-      <button onClick={increment}>Increment</button> 
+      <h1>{value}</h1>
+      <input type="text" value={value}></input>
+      <button onClick={increment}>Increment</button>
       <button onClick={decrement}>Decrement</button>
     </div>
   );
