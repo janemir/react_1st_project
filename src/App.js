@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ClassCounter from "./components/ClassCounter";
+import './styles/App.css';
 
 function App() {
   let [value, setValue] = useState('ТЕКСТ В ИНПУТЕ')
