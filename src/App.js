@@ -1,45 +1,20 @@
 import React, { useState } from "react";
 import ClassCounter from "./components/ClassCounter";
 import './styles/App.css';
+import PostItem from "./components/PostItem";
 
 function App() {
-  let [value, setValue] = useState('ТЕКСТ В ИНПУТЕ')
+let [posts, setPosts] = useState([
+  {id: 1, title: 'Javascript', body: 'Description'}
+  {id: 2, title: 'Javascript 2', body: 'Description'}
+  {id: 3, title: 'Javascript 3', body: 'Description'}
+])
 
   return (
     <div className="App">
-      <div className="post">
-        <div className="post__contend">
-          <strong>1. javascript</strong>
-          <div>
-            javascript - язык программирования
-          </div>
-        </div>
-        <div className="post__btns">
-          <button>удалить</button>
-        </div>
-      </div>
-      <div className="post">
-        <div className="post__contend">
-          <strong>1. javascript</strong>
-          <div>
-            javascript - язык программирования
-          </div>
-        </div>
-        <div className="post__btns">
-          <button>удалить</button>
-        </div>
-      </div>
-      <div className="post">
-        <div className="post__contend">
-          <strong>1. javascript</strong>
-          <div>
-            javascript - язык программирования
-          </div>
-        </div>
-        <div className="post__btns">
-          <button>удалить</button>
-        </div>
-      </div>
+      {posts.map(post =>
+        <PostItem post={post}/>
+      )}
     </div>
   );
 }
