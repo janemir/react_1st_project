@@ -18,6 +18,28 @@ function App() {
           <button>удалить</button>
         </div>
       </div>
+      <div className="post">
+        <div className="post__contend">
+          <strong>1. javascript</strong>
+          <div>
+            javascript - язык программирования
+          </div>
+        </div>
+        <div className="post__btns">
+          <button>удалить</button>
+        </div>
+      </div>
+      <div className="post">
+        <div className="post__contend">
+          <strong>1. javascript</strong>
+          <div>
+            javascript - язык программирования
+          </div>
+        </div>
+        <div className="post__btns">
+          <button>удалить</button>
+        </div>
+      </div>
     </div>
   );
 }
