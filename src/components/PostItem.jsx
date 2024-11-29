@@ -1,4 +1,4 @@
-import PostItem, { useState } from "react";
+import React, { useState } from "react";
 
 let PostItem = (props) => {
 
